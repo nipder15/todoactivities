@@ -1,0 +1,34 @@
+.todocontainer{
+    padding:20px;
+    font-size: 30;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid blue;
+    background-color:burlywood;
+    width: 70%;
+    
+    
+}
+
+.todocontainer h1{
+    text-align: center;
+}
+
+.todolist{
+   width: 100%;
+}
+th, td{
+    width: 70%;
+    text-align: left;
+    vertical-align: top;
+    border:1px solid #000;
+    border-spacing: 0;
+    padding: 1px;  
+    
+}
+.description{
+    width: 60%;
+    border-radius: 2px transparent;
+    height: 40px;
+    background-color: transparent;
+    border-color: 1px solid black;
+}

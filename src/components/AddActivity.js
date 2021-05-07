@@ -25,8 +25,8 @@ class AddActivity extends Component{
         return(
             <div className="row">
                 <form onSubmit={this.handleSubmit}>
-                    <div className="input-field col s4">
-                        <input name="description" autoComplete="off" placeholder="Enter your Activity" required type="text" onChange={ this.updateState} />
+                    <div className="input-field">
+                        <input className="description" autoComplete="off" placeholder="Enter your Activity" required type="text" onChange={ this.updateState} />
                     </div>
                     <div className="input-field col s2">
                         <input type="submit" value="Add +" className="btn blue"/>

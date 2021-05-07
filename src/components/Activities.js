@@ -29,7 +29,7 @@ class Activities extends Component{
         )
 
         return(
-            <table className="striped">
+            <table className="todolist">
             <thead>
                 <tr>
                 <th>Description</th>

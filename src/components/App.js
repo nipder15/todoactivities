@@ -2,6 +2,7 @@ import { render } from '@testing-library/react';
 import React, {Component} from 'react';
 import Activities from './Activities';
 import AddActivity from './AddActivity';
+
 class App extends Component{
 
     state={
@@ -26,14 +27,7 @@ class App extends Component{
             activities
         });
     }
-    updateCheck=(e)=>{
-        let activities = this.state.activities;
-        activities[e].check=true;
-       
-        this.setState({
-            activities
-        });
-    }
+    
     updateActivity=(e,description,check) =>{
         let activities = this.state.activities;
         activities[e].description=description;
@@ -54,9 +48,8 @@ class App extends Component{
     }    
     render(){
         return(
-            <div>
+            <div className="todocontainer">
                 <h1>To Do Activities</h1>
-                console.log(Activities);
                 <Activities allActivities={this.state.activities} pressEditBtn={this.pressEditBtn} updateActivity={this.updateActivity} pressDelete={this.pressDelete} />
                 <AddActivity addActivity={this.addActivity}/>
                 <link rel='stylesheet prefetch' href='https://catfact.ninja/docs'></link>
